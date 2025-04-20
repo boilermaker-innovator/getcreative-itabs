@@ -1,0 +1,440 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotCreative Brand Assessment | Unlock Your Brand's Full Potential</title>
+    
+    <!-- Essential Meta Tags for SEO and Social Sharing -->
+    <meta name="description" content="Discover how GotCreative can transform your brand into your most valuable business asset. Take our 5-minute brand assessment to unlock growth opportunities.">
+    <meta name="keywords" content="brand assessment, brand strategy, GotCreative, branding agency, brand development">
+    <meta name="author" content="GotCreative">
+    
+    <!-- Open Graph Meta Tags for LinkedIn and other social platforms -->
+    <meta property="og:title" content="GotCreative Brand Assessment | Unlock Your Brand's Full Potential">
+    <meta property="og:description" content="Your brand is your most valuable asset. Is it unlocking the full potential of your business? Take our 5-minute assessment to find out.">
+    <meta property="og:image" content="https://gotcreative.com/wp-content/uploads/2023/06/GotCreative-Logo-White.png">
+    <meta property="og:url" content="https://gotcreative-rebrand.scoreapp.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GotCreative">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GotCreative Brand Assessment | Unlock Your Brand's Potential">
+    <meta name="twitter:description" content="Take our 5-minute brand assessment to discover what's working, what's not, and what you can improve immediately.">
+    <meta name="twitter:image" content="https://gotcreative.com/wp-content/uploads/2023/06/GotCreative-Logo-White.png">
+    
+    <!-- Favicon - You may want to replace this with an actual favicon -->
+    <link rel="icon" href="https://gotcreative.com/wp-content/uploads/2023/06/GotCreative-Logo-White.png" type="image/png">
+    
+    <!-- ColorThief Integration -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        .itabs-container {
+            max-width: 750px;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+        /* Header Styles */
+        .itabs-header {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background-color: #222; /* Fallback */
+            color: #fff;
+            position: relative;
+        }
+        
+        .logo-container {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            margin-right: 16px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .site-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        
+        .site-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #eaeaea;
+            position: relative;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .tab-btn {
+            padding: 14px 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            white-space: nowrap;
+            position: relative;
+            color: #555;
+            transition: color 0.3s;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .tab-btn:hover {
+            color: #000;
+        }
+        
+        .tab-indicator {
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            transition: all 0.3s ease;
+            background-color: #96D45A; /* Will be changed by ColorThief */
+        }
+        
+        /* Tab Content */
+        .tab-content {
+            padding: 25px 30px;
+            min-height: 220px;
+        }
+        
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        .tab-pane.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Content Formatting */
+        .tab-pane h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #333;
+        }
+        
+        .tab-pane ul {
+            padding-left: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .tab-pane li {
+            margin-bottom: 8px;
+        }
+        
+        .tab-pane p {
+            margin-bottom: 12px;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: #96D45A;
+        }
+        
+        /* Footer */
+        .itabs-footer {
+            padding: 18px 30px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        .visit-btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            background-color: #96D45A; /* Will be changed by ColorThief */
+            color: #222;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .visit-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .itabs-attribution {
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .itabs-container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .tab-nav {
+                padding: 0 5px;
+            }
+            
+            .tab-btn {
+                padding: 12px 10px;
+                font-size: 0.85rem;
+            }
+            
+            .itabs-header {
+                padding: 12px 15px;
+            }
+            
+            .logo-container {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .site-title {
+                font-size: 1.2rem;
+            }
+            
+            .tab-content {
+                padding: 20px;
+            }
+            
+            .itabs-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .visit-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="itabs-container">
+        <!-- Header with Logo and Title -->
+        <header class="itabs-header">
+            <div class="logo-container">
+                <!-- Using the logo from the screenshot -->
+                <img id="logo-img" src="https://gotcreative.com/wp-content/uploads/2023/06/GotCreative-Logo-White.png" alt="GotCreative Logo" crossorigin="anonymous">
+            </div>
+            <div>
+                <h1 class="site-title">GotCreative</h1>
+                <div class="site-subtitle">Brand Work</div>
+            </div>
+        </header>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="key-features">Key Features</button>
+            <button class="tab-btn" data-tab="why-choose">Why Choose</button>
+            <button class="tab-btn" data-tab="details">Details</button>
+            <div class="tab-indicator"></div>
+        </div>
+        
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Overview Tab -->
+            <div class="tab-pane active" id="overview">
+                <h3>Brand Assessment</h3>
+                <p>Your brand is your <span class="highlight">most valuable asset</span> and the foundation of your business success. GotCreative specializes in helping you unlock your brand's full potential to drive business growth.</p>
+                <p>Our comprehensive approach evaluates what's working, what's not, and identifies immediate opportunities for improvement through our <span class="highlight">5-minute assessment</span> scorecard.</p>
+            </div>
+            
+            <!-- Key Features Tab -->
+            <div class="tab-pane" id="key-features">
+                <h3>Key Brand Services</h3>
+                <ul>
+                    <li><span class="highlight">Brand Assessment</span> - Identify strengths and weaknesses in your current branding</li>
+                    <li><span class="highlight">Strategy Development</span> - Create a roadmap for brand growth and improvement</li>
+                    <li><span class="highlight">Visual Identity</span> - Develop compelling brand aesthetics that resonate</li>
+                    <li><span class="highlight">Brand Messaging</span> - Craft powerful communication that connects with clients</li>
+                    <li><span class="highlight">Implementation</span> - Execute brand strategies across all touchpoints</li>
+                </ul>
+            </div>
+            
+            <!-- Why Choose Tab -->
+            <div class="tab-pane" id="why-choose">
+                <h3>Why Choose GotCreative</h3>
+                <p>A <span class="highlight">powerful brand</span> isn't just about looking good—it's your gateway to better clients, bigger contracts, and stronger growth.</p>
+                <p>Our results-driven approach focuses on creating brands that <span class="highlight">perform measurably better</span> and deliver tangible business results.</p>
+                <p>Is your current brand truly working as hard for your business as it could be?</p>
+            </div>
+            
+            <!-- Details Tab -->
+            <div class="tab-pane" id="details">
+                <h3>The Process</h3>
+                <ul>
+                    <li><span class="highlight">Assessment:</span> 5-minute scorecard to identify immediate improvement areas</li>
+                    <li><span class="highlight">Analysis:</span> Expert review of your current brand performance</li>
+                    <li><span class="highlight">Strategy:</span> Custom action plan tailored to your business goals</li>
+                    <li><span class="highlight">Implementation:</span> Execution of brand improvements with measurable results</li>
+                    <li><span class="highlight">Growth:</span> Ongoing support to ensure continued brand performance</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="itabs-footer">
+            <a href="https://gotcreative-rebrand.scoreapp.com" target="_blank" class="visit-btn">Take the Scorecard</a>
+            <div class="itabs-attribution">Powered by iTabs Generator</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab Functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            const tabIndicator = document.querySelector('.tab-indicator');
+            
+            // Set initial indicator position
+            updateIndicator(document.querySelector('.tab-btn.active'));
+            
+            // Tab click event
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                    
+                    // Update indicator
+                    updateIndicator(this);
+                });
+            });
+            
+            function updateIndicator(activeBtn) {
+                const left = activeBtn.offsetLeft;
+                const width = activeBtn.offsetWidth;
+                
+                tabIndicator.style.left = `${left}px`;
+                tabIndicator.style.width = `${width}px`;
+            }
+            
+            // Optional: Auto-rotation for demo purposes
+            let autoRotate = false; // Set to true to enable auto-rotation
+            let currentTabIndex = 0;
+            
+            if (autoRotate) {
+                setInterval(() => {
+                    currentTabIndex = (currentTabIndex + 1) % tabBtns.length;
+                    tabBtns[currentTabIndex].click();
+                }, 5000); // Rotate every 5 seconds
+            }
+            
+            // Resize event for indicator position
+            window.addEventListener('resize', function() {
+                updateIndicator(document.querySelector('.tab-btn.active'));
+            });
+            
+            // ColorThief Integration
+            const colorThief = new ColorThief();
+            const img = document.getElementById('logo-img');
+            const header = document.querySelector('.itabs-header');
+            const tabIndicatorEl = document.querySelector('.tab-indicator');
+            const visitBtn = document.querySelector('.visit-btn');
+            
+            // Color extraction function
+            function extractAndApplyColors() {
+                try {
+                    // Get dominant color
+                    const dominantColor = colorThief.getColor(img);
+                    
+                    // Convert RGB to hex
+                    const primaryColor = rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
+                    
+                    // Apply colors
+                    header.style.backgroundColor = '#222'; // Keep the dark header from the original site
+                    tabIndicatorEl.style.backgroundColor = '#96D45A'; // Use the green accent color from the button
+                    visitBtn.style.backgroundColor = '#96D45A'; // Use the green accent color from the button
+                    
+                    // Set text colors
+                    header.style.color = '#fff';
+                    visitBtn.style.color = '#222';
+                    
+                    console.log('Colors applied successfully!');
+                } catch (error) {
+                    console.error('Error extracting colors:', error);
+                    // Fallback colors are already in the CSS
+                }
+            }
+            
+            // Helper functions for color manipulation
+            function rgbToHex(r, g, b) {
+                return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+            }
+            
+            function getBrightness(r, g, b) {
+                return Math.sqrt(
+                    0.299 * (r * r) +
+                    0.587 * (g * g) +
+                    0.114 * (b * b)
+                );
+            }
+            
+            // Check if image is loaded
+            if (img.complete) {
+                extractAndApplyColors();
+            } else {
+                img.addEventListener('load', extractAndApplyColors);
+            }
+            
+            // Handle image loading errors
+            img.addEventListener('error', function() {
+                console.error('Error loading image');
+                // Use fallback colors that are already in the CSS
+                img.src = 'https://via.placeholder.com/80/ffffff/222222?text=GC';
+            });
+        });
+    </script>
+</body>
+</html>
